@@ -1,2 +1,2 @@
-export * from './Button';
-export * from './MyDoughnut';
+export { Button } from './Button';
+export { MyDoughnut } from './MyDoughnut';

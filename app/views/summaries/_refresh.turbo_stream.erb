@@ -1,0 +1,3 @@
+<%= turbo_stream.replace "summaries_table", partial: "summaries/summaries_table", locals: { candidates: } %>
+<%= turbo_stream.replace "summaries-chart-data", partial: "summaries/chart_data", locals: { candidates: } %>
+<%= turbo_stream_action_tag "dispatch_event", target: "summaries-chart-data", "event-name": "summaries:change", "event-detail": {}.to_json %>
